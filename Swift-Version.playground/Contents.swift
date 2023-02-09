@@ -1,3 +1,5 @@
+// Apparently this is the best way to check the
+// Swift version running in a playground
 #if swift(>=5.7)
 print("Hello, Swift 5.7")
 #elseif swift(>=5.6)
