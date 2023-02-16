@@ -8,7 +8,7 @@ class TestCase: XCTestCase {
             XCTestExpectation(description:). This test will pass despite the
             expectation never being waited!
         
-            To wait this expectaion, you must explicitly call
+            To wait this expectation, you must explicitly call
             wait(for expectations: [XCTestExpectation], timeout seconds: TimeInterval).
             The convenience method, waitForExpectaions(timeout:) doesn't wait these!
         """
@@ -23,7 +23,7 @@ class TestCase: XCTestCase {
     func testWithUnwaitedExpetationsThatWillFail() {
         let description = """
             XCTest forces you to wait for expectations created with
-             expectation(description:), so this test will fail!
+            expectation(description:), so this test will fail!
         """
         let expectation = expectation(description: description)
         
